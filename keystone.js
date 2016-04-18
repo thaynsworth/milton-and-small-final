@@ -94,6 +94,10 @@ keystone.set('nav', {
 	'users': 'users'
 });
 
+// Update sign-in logo
+
+keystone.set('signin logo', '/images/mands-wreath.jpg');
+
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();
