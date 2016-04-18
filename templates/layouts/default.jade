@@ -55,12 +55,7 @@ html
 							each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
-							else
-								li: a(href='/keystone/signin') Sign In
+							li: a(href='/') Right Nav
 
 		//- BODY
 		#body
@@ -82,9 +77,14 @@ html
 
 		//- FOOTER
 		.container: #footer
-
-			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			p MILTON & SMALL BEVERAGE CO.
+			ul.nav.navbar-nav.navbar-right
+				if user
+					if user.canAccessKeystone
+						li: a(href='/keystone') Open Keystone
+					li: a(href='/keystone/signout') Sign Out
+				else
+					li: a(href='/keystone/signin') Sign In
 
 
 		//- JAVASCRIPT
