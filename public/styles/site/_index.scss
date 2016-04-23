@@ -1,17 +1,31 @@
 
 
 
-#home-page {
+.home-page-header {
   background-color: lightgreen;
   text-align: center;
-  // background-image: url("../../images/logo-main.svg");
+  padding: 4% 0;
 
   .home-logo {
 
     object {
-      width: 60%;
+      width: 50%;
       height: auto;
     }
+  }
+
+  .home-arrow {
+
+  }
+}
+
+.home-products-rtd {
+  background-color: lightyellow;
+  text-align: center;
+  padding: 4% 0;
+
+  img {
+    width: 70%;
   }
 }
 

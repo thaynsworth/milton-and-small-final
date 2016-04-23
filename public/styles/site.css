@@ -5854,9 +5854,17 @@ button.close {
 body {
   font-family: 'Metrolite2Com'; }
 
-#home-page {
+.home-page-header {
   background-color: lightgreen;
-  text-align: center; }
-  #home-page .home-logo object {
-    width: 60%;
+  text-align: center;
+  padding: 4% 0; }
+  .home-page-header .home-logo object {
+    width: 50%;
     height: auto; }
+
+.home-products-rtd {
+  background-color: lightyellow;
+  text-align: center;
+  padding: 4% 0; }
+  .home-products-rtd img {
+    width: 70%; }
