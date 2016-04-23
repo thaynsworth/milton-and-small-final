@@ -5821,6 +5821,22 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: "linotype";
+  src: url(../../fonts/LinotypeMetroMediumLTTwo.ttf); }
+
+@font-face {
+  font-family: "Metroblack2Com";
+  src: url(../../fonts/Metroblack2Com.ttf); }
+
+@font-face {
+  font-family: "Metrolite2Com";
+  src: url(../../fonts/Metrolite2Com.ttf); }
+
+@font-face {
+  font-family: "MetroMediumHPLHS";
+  src: url(../../fonts/MetroMediumHPLHS.ttf); }
+
 #header {
   margin-top: 30px; }
 
@@ -5834,3 +5850,6 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+body {
+  font-family: 'Metrolite2Com'; }

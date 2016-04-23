@@ -1,3 +1,25 @@
 // Override Bootstrap variables in this file, e.g.
 
+// Fonts
+
+@font-face {
+    font-family: "linotype";
+    src: url(../../fonts/LinotypeMetroMediumLTTwo.ttf);
+}
+
+@font-face {
+    font-family: "Metroblack2Com";
+    src: url(../../fonts/Metroblack2Com.ttf);
+}
+
+@font-face {
+    font-family: "Metrolite2Com";
+    src: url(../../fonts/Metrolite2Com.ttf);
+}
+
+@font-face {
+    font-family: "MetroMediumHPLHS";
+    src: url(../../fonts/MetroMediumHPLHS.ttf);
+}
+
 $font-size-base: 14px;
