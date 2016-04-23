@@ -5822,19 +5822,19 @@ button.close {
     display: none !important; } }
 
 @font-face {
-  font-family: "linotype";
+  font-family: 'linotype';
   src: url(../../fonts/LinotypeMetroMediumLTTwo.ttf); }
 
 @font-face {
-  font-family: "Metroblack2Com";
+  font-family: 'Metroblack2Com';
   src: url(../../fonts/Metroblack2Com.ttf); }
 
 @font-face {
-  font-family: "Metrolite2Com";
+  font-family: 'Metrolite2Com';
   src: url(../../fonts/Metrolite2Com.ttf); }
 
 @font-face {
-  font-family: "MetroMediumHPLHS";
+  font-family: 'MetroMediumHPLHS';
   src: url(../../fonts/MetroMediumHPLHS.ttf); }
 
 #header {
@@ -5853,3 +5853,10 @@ button.close {
 
 body {
   font-family: 'Metrolite2Com'; }
+
+#home-page {
+  background-color: lightgreen;
+  text-align: center; }
+  #home-page .home-logo object {
+    width: 60%;
+    height: auto; }
