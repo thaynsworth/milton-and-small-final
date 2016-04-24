@@ -1,17 +1,26 @@
 extends ../layouts/default
 
 block content
-	.container-fluid
+	.container
 		.row: .col-sm-12.col-md-12.home-page-header
 			//- img(src='images/logo-main.svg', alt='the image is broke', height='100', width='100')
 			.home-logo
 				object(type='image/svg+xml', data='images/logo-main.svg')
 			img(src='images/down-arrow.png', class='home-arrow')
-		.row.home-products-rtd
-			.col-md-4
+		.row.home-products
+			h2 Personal Sized
+			.col-md-4.col-sm-4.col-xs-12
 				img(src='images/rtd_black_white.jpeg')
-			.col-md-4
+			.col-md-4.col-sm-4.col-xs-12
 				img(src='images/rtd_cacao_blue.jpeg')
-			.col-md-4
+			.col-md-4.col-sm-4.col-xs-12
 				img(src='images/rtd_chaga_yellow.jpg')
+		.row.home-products
+			h2 Concentrates
+			.col-md-4.col-sm-4.col-xs-12
+				img(src='images/conc_coffee_and_chic.jpg')
+			.col-md-4.col-sm-4.col-xs-12
+				img(src='images/conc_dark_roast.jpg')
+			.col-md-4.col-sm-4.col-xs-12
+				img(src='images/conc_dark_roast.jpg')
 

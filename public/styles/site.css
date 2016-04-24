@@ -5837,9 +5837,6 @@ button.close {
   font-family: 'MetroMediumHPLHS';
   src: url(../../fonts/MetroMediumHPLHS.ttf); }
 
-#header {
-  margin-top: 30px; }
-
 #footer {
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
@@ -5854,6 +5851,10 @@ button.close {
 body {
   font-family: 'Metrolite2Com'; }
 
+#header {
+  background-color: lightblue;
+  height: 40px; }
+
 .home-page-header {
   background-color: lightgreen;
   text-align: center;
@@ -5862,9 +5863,11 @@ body {
     width: 50%;
     height: auto; }
 
-.home-products-rtd {
+.home-products {
   background-color: lightyellow;
   text-align: center;
   padding: 4% 0; }
-  .home-products-rtd img {
-    width: 70%; }
+  .home-products h2 {
+    margin: 0 0 30px; }
+  .home-products img {
+    width: 50%; }
