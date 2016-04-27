@@ -2,6 +2,11 @@
 (function($) {
     $(document).ready(function(){
         $(window).scroll(function(){
+            if ($(this).scrollTop() > 20) {
+              $('.arrow').fadeOut(500);
+            } else {
+              $('.arrow').fadeIn(500);
+            }
             if ($(this).scrollTop() > 350) {
                 $('.icon').fadeIn(500);
                 $('.nav-logo').fadeIn(500);
