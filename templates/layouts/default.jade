@@ -39,6 +39,8 @@ html
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
+			div.nav-logo
+				object(type='image/svg+xml', data='images/logo-main.svg')
 			div(role='navigation').mobilenav
 				each link in navLinks
 					li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label

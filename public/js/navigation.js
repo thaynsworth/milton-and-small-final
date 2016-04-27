@@ -2,10 +2,12 @@
 (function($) {
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 350) {
                 $('.icon').fadeIn(500);
+                $('.nav-logo').fadeIn(500);
             } else {
                 $('.icon').fadeOut(500);
+                $('.nav-logo').fadeOut(500);
             }
         });
     });

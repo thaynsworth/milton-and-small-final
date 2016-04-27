@@ -5851,6 +5851,17 @@ button.close {
 body {
   font-family: 'Metrolite2Com'; }
 
+.nav-logo {
+  width: 210px;
+  z-index: 999;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: none; }
+  .nav-logo object {
+    height: 100%;
+    width: 100%; }
+
 .top-animate {
   background: #fff !important;
   top: 13px !important;
@@ -5901,7 +5912,7 @@ body {
   height: 50px;
   width: 50px;
   margin: 0px;
-  top: 20px;
+  top: 60px;
   right: 60px; }
 
 .mobilenav {
