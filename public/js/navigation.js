@@ -1,3 +1,16 @@
+
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('.icon').fadeIn(500);
+            } else {
+                $('.icon').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+
 function togglescroll() {
   $('body').on('touchstart', function(e) {
     if ($('body').hasClass('noscroll')) {

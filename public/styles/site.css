@@ -5897,9 +5897,9 @@ body {
 .icon {
   z-index: 999;
   position: fixed;
-  display: block;
-  height: 32px;
-  width: 32px;
+  display: none;
+  height: 50px;
+  width: 50px;
   margin: 0px;
   top: 20px;
   right: 60px; }
