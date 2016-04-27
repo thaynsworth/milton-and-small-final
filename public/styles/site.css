@@ -5849,7 +5849,17 @@ button.close {
   height: auto; }
 
 body {
-  font-family: 'Metrolite2Com'; }
+  font-family: 'Metrolite2Com';
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #5BB4FC, #B6FCCC);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5BB4FC, #B6FCCC);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5BB4FC, #B6FCCC);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5BB4FC, #B6FCCC);
+  /* Standard syntax */ }
 
 .nav-logo {
   width: 210px;
@@ -5942,15 +5952,14 @@ body {
   margin-top: 190px; }
 
 .home-page-header {
-  background-color: lightgreen;
   text-align: center;
-  padding: 4% 0; }
+  padding: 4% 0;
+  min-height: 750px; }
   .home-page-header .home-logo object {
-    width: 50%;
+    width: 60%;
     height: auto; }
 
 .home-products {
-  background-color: lightyellow;
   text-align: center;
   padding: 4% 0; }
   .home-products h2 {
