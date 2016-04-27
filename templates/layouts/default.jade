@@ -34,12 +34,19 @@ html
 
 	//- HTML BODY
 	body
-
 		//- HEADER
 		#header: .container-fluid
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
+			div(role='navigation').mobilenav
+				each link in navLinks
+					li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+			a(href='javascript:void(0)', class='icon')
+				div.hamburger
+					div.menui.top-menu
+					div.menui.mid-menu
+					div.menui.bottom-menu
 
 			//- div(role="navigation").navbar.navbar-default
 			//- 	.container-fluid
@@ -59,7 +66,6 @@ html
 
 		//- BODY
 		#body
-
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
 			//- Remember to include it in your templates when you override the intro and content blocks!
@@ -75,16 +81,16 @@ html
 			block content
 
 
-		//- FOOTER
-		//- .container: #footer
-		//- 	p MILTON & SMALL BEVERAGE CO.
-		//- 	ul.nav.navbar-nav.navbar-right
-		//- 		if user
-		//- 			if user.canAccessKeystone
-		//- 				li: a(href='/keystone') Open Keystone
-		//- 			li: a(href='/keystone/signout') Sign Out
-		//- 		else
-		//- 			li: a(href='/keystone/signin') Sign In
+			//- FOOTER
+			//- .container: #footer
+			//- 	p MILTON & SMALL BEVERAGE CO.
+			//- 	ul.nav.navbar-nav.navbar-right
+			//- 		if user
+			//- 			if user.canAccessKeystone
+			//- 				li: a(href='/keystone') Open Keystone
+			//- 			li: a(href='/keystone/signout') Sign Out
+			//- 		else
+			//- 			li: a(href='/keystone/signin') Sign In
 
 
 		//- JAVASCRIPT
@@ -104,6 +110,7 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
+		script(src='/js/navigation.js')
 
 		//- Include template-specific javascript files by extending the js block
 		block js
