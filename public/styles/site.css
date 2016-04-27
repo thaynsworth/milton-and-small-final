@@ -5921,14 +5921,14 @@ body {
   padding: 10px; }
 
 .mobilenav li a {
-  font-size: 150%;
+  font-size: 250%;
   color: #fff;
   text-decoration: none;
   font-weight: 300;
   width: 100%; }
 
 .mobilenav li:first-child {
-  margin-top: 60px; }
+  margin-top: 190px; }
 
 .home-page-header {
   background-color: lightgreen;

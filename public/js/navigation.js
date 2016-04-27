@@ -28,25 +28,3 @@ $(document).keydown(function(e) {
     $(".bottom-menu").removeClass("bottom-animate");
   }
 });
-
-// // Normal Clicks
-// $(function() {
-//   $('.toggle-nav').click(function() {
-//     console.log("top function")
-//     $('body').toggleClass('show-nav');
-//      return false;
-//   });
-
-// });
-
-
-// // Toggle with hitting of ESC
-// $(document).keyup(function(e) {
-//     if (e.keyCode == 27) {
-//    $('body').toggleClass('show-nav');
-//   }
-// });
-
-// function tomsFunction () {
-//   console.log("hey tom");
-// }
