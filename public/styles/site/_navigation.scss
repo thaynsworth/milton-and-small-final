@@ -1,10 +1,13 @@
+.nav-logo-animate {
+  display: none;
+}
+
 .nav-logo {
   width: 210px;
   z-index: 999;
   position: fixed;
   top: 20px;
   left: 20px;
-  display: none;
 
   object {
     height: 100%;
@@ -62,10 +65,13 @@
   position: absolute;
 }
 
+.icon-animate {
+  display: none;
+}
+
 .icon {
   z-index: 999;
   position: fixed;
-  display: none;
   height: 50px;
   width: 50px;
   margin: 0px;

@@ -8,11 +8,11 @@
               $('.arrow').fadeIn(500);
             }
             if ($(this).scrollTop() > 350) {
-                $('.icon').fadeIn(500);
-                $('.nav-logo').fadeIn(500);
+                $('.icon-animate').fadeIn(500);
+                $('.nav-logo-animate').fadeIn(500);
             } else {
-                $('.icon').fadeOut(500);
-                $('.nav-logo').fadeOut(500);
+                $('.icon-animate').fadeOut(500);
+                $('.nav-logo-animate').fadeOut(500);
             }
         });
     });
