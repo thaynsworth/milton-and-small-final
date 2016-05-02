@@ -7,7 +7,7 @@
             } else {
               $('.arrow').fadeIn(500);
             }
-            if ($(this).scrollTop() > 350) {
+            if ($(this).scrollTop() > 300) {
                 $('.icon-animate').fadeIn(500);
                 $('.nav-logo-animate').fadeIn(500);
             } else {

@@ -7,9 +7,13 @@ block content
 		//- ... or completely change this header to suit your design.
 		div.nav-logo.nav-logo-animate
 			object(type='image/svg+xml', data='images/logo-main.svg')
-		div(role='navigation').mobilenav
+		ul(role='navigation').mobilenav
 			each link in navLinks
 				li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+			ul.social-links
+				li: a(href='https://www.facebook.com/miltonandsmall'): object(type='image/svg+xml', data='images/facebook-1462181687_squarico-19.svg')
+				li: a(href='https://twitter.com/miltonandsmall'): object(type='image/svg+xml', data='images/twitter-1462181690_squarico-18.svg')
+				li: a(href='https://www.instagram.com/miltonandsmall/'): object(type='image/svg+xml', data='images/insta-1462181685_squarico-20.svg')
 		a(href='javascript:void(0)', class='icon icon-animate')
 			div.hamburger
 				div.menui.top-menu

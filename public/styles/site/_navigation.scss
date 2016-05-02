@@ -109,10 +109,24 @@
   width: 100%;
 }
 
-.mobilenav li:first-child {
-  margin-top: 190px;
+.mobilenav > li:first-child {
+  margin-top: 150px;
 }
 
+.social-links {
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+
+  object {
+    height: auto;
+    width: 1.5em;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
 
 
 

@@ -5953,8 +5953,18 @@ body {
   font-weight: 300;
   width: 100%; }
 
-.mobilenav li:first-child {
-  margin-top: 190px; }
+.mobilenav > li:first-child {
+  margin-top: 150px; }
+
+.social-links {
+  margin: 20px auto;
+  padding: 0;
+  text-align: center; }
+  .social-links object {
+    height: auto;
+    width: 1.5em; }
+  .social-links li {
+    display: inline-block; }
 
 #footer {
   background-color: #4d4d4d;
