@@ -5849,6 +5849,7 @@ button.close {
   height: auto; }
 
 body {
+  min-height: 800px;
   font-family: 'Metrolite2Com';
   background: #06c5a6;
   /* For browsers that do not support gradients */
@@ -5860,6 +5861,9 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #06c5a6, #fdc79e);
   /* Standard syntax */ }
+
+#header {
+  min-height: 300px; }
 
 .nav-logo-animate {
   display: none; }
