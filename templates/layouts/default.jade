@@ -52,17 +52,14 @@ html
 			//- The content block should contain the body of your template's content
 			block content
 
-
-			//- FOOTER
-			//- .container: #footer
-			//- 	p MILTON & SMALL BEVERAGE CO.
-			//- 	ul.nav.navbar-nav.navbar-right
-			//- 		if user
-			//- 			if user.canAccessKeystone
-			//- 				li: a(href='/keystone') Open Keystone
-			//- 			li: a(href='/keystone/signout') Sign Out
-			//- 		else
-			//- 			li: a(href='/keystone/signin') Sign In
+	#footer.container-fluid
+		//- ul
+		//- 	if user
+		//- 		if user.canAccessKeystone
+		//- 			li: a(href='/keystone') Open Keystone
+		//- 		li: a(href='/keystone/signout') Sign Out
+		//- 	else
+		//- 		li: a(href='/keystone/signin') Sign In
 
 
 		//- JAVASCRIPT

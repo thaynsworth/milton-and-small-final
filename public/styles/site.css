@@ -5837,12 +5837,6 @@ button.close {
   font-family: 'MetroMediumHPLHS';
   src: url(../../fonts/MetroMediumHPLHS.ttf); }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -5861,6 +5855,9 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #06c5a6, #fdc79e);
   /* Standard syntax */ }
+
+#body {
+  padding: 0 0 130px; }
 
 #header {
   min-height: 300px; }
@@ -5958,6 +5955,12 @@ body {
 
 .mobilenav li:first-child {
   margin-top: 190px; }
+
+#footer {
+  background-color: #4d4d4d;
+  min-height: 130px;
+  color: #f2f2f2;
+  z-index: 998; }
 
 .home-page-header {
   text-align: center;
