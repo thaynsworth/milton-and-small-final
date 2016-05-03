@@ -5874,6 +5874,10 @@ body {
   .nav-logo object {
     height: 100%;
     width: 100%; }
+  .nav-logo img {
+    width: 100%;
+    height: 100%;
+    color: white; }
 
 .top-animate {
   background: #fff !important;
