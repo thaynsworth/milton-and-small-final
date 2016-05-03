@@ -5874,10 +5874,9 @@ body {
   .nav-logo object {
     height: 100%;
     width: 100%; }
-  .nav-logo img {
-    width: 100%;
-    height: 100%;
-    color: white; }
+
+.noscroll {
+  overflow: hidden; }
 
 .top-animate {
   background: #fff !important;
@@ -5945,6 +5944,15 @@ body {
   height: 100%;
   background: black;
   padding: 0; }
+
+.mobilenav .nav-logo {
+  width: 180px;
+  top: 30px;
+  left: 50px; }
+
+.mobilenav img {
+  width: 100%;
+  height: 100%; }
 
 .mobilenav li {
   list-style-type: none;
