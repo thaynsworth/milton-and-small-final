@@ -14,6 +14,7 @@ html
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="/styles/site.css", rel="stylesheet")
+		link(href="https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -80,6 +81,7 @@ html
 
 		//- Add scripts that are globally required by your site here.
 		script(src='/js/navigation.js')
-
+		script(src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js')
+		script(src='/js/find.js')
 		//- Include template-specific javascript files by extending the js block
 		block js

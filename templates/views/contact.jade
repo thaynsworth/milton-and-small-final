@@ -2,14 +2,16 @@ extends ../layouts/default
 
 block content
 	#header: .container-fluid
-
-		//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
-		//- ... or completely change this header to suit your design.
 		div.nav-logo
 			object(type='image/svg+xml', data='images/logo-main.svg')
-		div(role='navigation').mobilenav
+		ul(role='navigation').mobilenav
 			each link in navLinks
 				li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+			ul.social-links
+				//- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+				li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+				li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+				li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
 		a(href='javascript:void(0)', class='icon')
 			div.hamburger
 				div.menui.top-menu

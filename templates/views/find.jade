@@ -1,8 +1,27 @@
 extends ../layouts/default
 
-block intro
-  .container
-    h1 Where to Find
-
 block content
-  .container
+  #header(style="position: absolute;"): .container-fluid
+    div.nav-logo
+      object(type='image/svg+xml', data='images/logo-main.svg')
+    ul(role='navigation').mobilenav
+      each link in navLinks
+        li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+      ul.social-links
+        //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+        li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+        li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+        li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+    a(href='javascript:void(0)', class='icon')
+      div.hamburger
+        div.menui.top-menu
+        div.menui.mid-menu
+        div.menui.bottom-menu
+
+  #find-map: .container-fluid
+    .row: .col-xs-12.col-sm-12.col-md-12
+    div#map(style="width: 100%; height: 100%;")
+
+  #find-list: .container-fluid
+
+
