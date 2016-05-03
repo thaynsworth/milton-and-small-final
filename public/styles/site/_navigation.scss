@@ -7,13 +7,21 @@
 }
 
 .nav-logo {
-  width: 210px;
   z-index: 999;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  // width: 210px;
+  // top: 20px;
+  // left: 20px;
+  width: 180px;
+  top: 30px;
+  left: 50px;
 
   object {
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
     height: 100%;
     width: 100%;
   }

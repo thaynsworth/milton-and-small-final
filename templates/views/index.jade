@@ -6,7 +6,8 @@ block content
 		//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 		//- ... or completely change this header to suit your design.
 		div.nav-logo.nav-logo-animate
-			object(type='image/svg+xml', data='images/logo-main.svg')
+			//- object(type='image/svg+xml', data='images/logo-main.svg')
+			img(src='images/milton-small-logo-name-only.png')
 			ul(role='navigation').mobilenav
 				each link in navLinks
 					li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
