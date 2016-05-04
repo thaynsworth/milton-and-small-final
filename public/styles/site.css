@@ -5860,7 +5860,7 @@ body {
   padding: 0 0 130px; }
 
 #header {
-  min-height: 300px; }
+  min-height: 200px; }
 
 .nav-logo-animate {
   display: none; }
@@ -6080,3 +6080,29 @@ body {
   top: 0;
   left: 0;
   width: 100%; }
+
+#find-list ul {
+  list-style-type: none; }
+
+#find-list p {
+  font-size: 25px; }
+
+#find-list a {
+  font-size: 21px;
+  color: white;
+  text-decoration: none; }
+  #find-list a:hover {
+    color: black; }
+
+#find-list .locations {
+  margin-top: 30px; }
+
+#find-list .city {
+  background-color: black;
+  color: white; }
+
+#find-list .loc-details {
+  height: 100%;
+  border: 5px solid black;
+  background-color: darkgrey;
+  padding: 20px 0; }

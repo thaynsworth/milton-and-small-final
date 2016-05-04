@@ -1,12 +1,15 @@
 extends ../layouts/default
 
 block content
-  #header(style="position: absolute;"): .container-fluid
+  #header: .container-fluid
     div.nav-logo
-      object(type='image/svg+xml', data='images/logo-main.svg')
+      //- object(type='image/svg+xml', data='images/logo-main.svg')
+      img(src='images/milton-small-logo-name-only.png')
     ul(role='navigation').mobilenav
       each link in navLinks
         li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+      .nav-logo
+        img(src='images/milton-small-logo-name-only-white.png')
       ul.social-links
         //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
         li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
@@ -23,9 +26,51 @@ block content
 
   #find-list: .container
     .row
-      .col-xs-3.col-sm-3.col-md-3
-        ul.find-list
-          li Wholefoods
-          li Publix
+      .col-xs-10.col-xs-offset-1.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1
+        p Our products are available at several fine retailers throughout Northern California. You can also arrange to purchase direct from us in Emeryville by appoinment.
+    .row.locations
+      .col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.city
+        h1 East Bay
+      .col-xs-12.col-sm-7.col-md-7.loc-details
+        ul
+          li: a(href='http://www.berkeleybowl.com/') Berkeley Bowl West (Heinz Avenue)
+          li: a(href='http://www.berkeleybowl.com/') Berkeley Bowl (Oregon St.)
+          li: a(href='http://www.wholefoodsmarket.com/') Whole Foods (Berkeley, Gilman, Oakland, Walnut Creek, Lafayette)
+          li: a(href='http://www.naturalgrocery.com/retailer/store_templates/shell_id_1.asp?storeID=HEU5FKAQ17S92ND700AKHLBD34WUD8VB') El Cerrito Natural Grocery
+          li: a(href='http://www.alamedanaturalgrocery.com/retailer/store_templates/shell_id_1.asp?storeID=AE5AB4DB016748B1BA0E76226F298C63') Alameda Natural Grocery
+          li: a(href='http://www.farmerjoesmarket.com/') Farmer Joe's - Fruitvale (New Joe's)
+          li: a(href='http://www.yelp.com/biz/star-grocery-berkeley') Star Grocery
+    .row.locations
+      .col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.city
+        h1 San Francisco
+      .col-xs-12.col-sm-7.col-md-7.loc-details
+        ul
+          li: a(href='http://smallfoodssf.com/') Small Foods SF (SoMa)
+          li: a(href='http://www.rainbow.coop/') Rainbow Grocery (Mission)
+          li: a(href='http://www.wholefoodsmarket.com/') Whole Foods (Franklin, Castro, SoMa, Ocean Ave, Haight, Potrero Hill, Noe Valley)
+          li: a(href='http://lebeaumarket.com/') Le Beau Market (Nob Hill)
+          li: a(href='http://www.greenearthnaturalfoods.com/') Green Earth Natural Foods (Divisadero @ McAllister)
+          li: a(href='http://www.canyonmarket.com/') Canyon Market (Glen Park)
+          li: a(href='http://www.otheravenues.coop/') Other Avenues (Sunset)
+          li: a(href='http://www.haightstreetmarket.com/') Haight St. Market
+          li: a(href='http://www.yelp.com/biz/noriega-produce-san-francisco') Noriega Produce (Outer Sunset)
+          li: a(href='http://www.yelp.com/biz/pay-n-save-grocery-san-francisco') Pay N Save (Mission)
+          li: a(href='http://www.yelp.com/biz/five-markets-san-francisco') Five Markets (Mission)
+          li: a(href='http://www.realfoodco.com/locations/') Real Food Company (Cow Hollow + Russian Hill)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
