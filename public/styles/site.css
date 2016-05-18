@@ -5991,9 +5991,9 @@ body {
 .home-page-header {
   text-align: center;
   padding: 4% 0;
-  min-height: 750px; }
+  min-height: 780px; }
   .home-page-header .home-logo object {
-    width: 60%;
+    width: 65%;
     height: auto; }
 
 .home-slogan {
@@ -6095,10 +6095,15 @@ body {
   list-style-type: none; }
 
 #find-list p {
-  font-size: 25px; }
+  font-size: 20px;
+  font-family: 'MetroMediumHPLHS'; }
+
+#find-list h3 {
+  font-family: 'MetroMediumHPLHS'; }
 
 #find-list a {
-  font-size: 21px;
+  font-size: 19px;
+  font-family: 'Metrolite2Com';
   color: white;
   text-decoration: none; }
   #find-list a:hover {
