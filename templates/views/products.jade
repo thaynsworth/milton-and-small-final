@@ -1,8 +1,12 @@
 extends ../layouts/default
 
 block intro
-  .container
-    h1 Products
+  .container-fluid
+    .row.home-products
+      .col-md-6.col-sm-6.col-xs-12
+        img(src='images/product-group.jpg')
+      .col-md-6.col-sm-6.col-xs-12
+        h3 PRODUCTS
 
 block content
   .container
