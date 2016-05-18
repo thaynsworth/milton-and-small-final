@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block content
-	#header-home: .container-fluid
+	#header-home: .container-fluid.header-wrapper.nav-logo-animate
 
 		//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 		//- ... or completely change this header to suit your design.
@@ -18,7 +18,7 @@ block content
 					li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
 					li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
 					li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
-			a(href='javascript:void(0)', class='icon icon-animate')
+			a(href='javascript:void(0)', class='icon nav-logo-animate')
 				div.hamburger
 					div.menui.top-menu
 					div.menui.mid-menu
@@ -26,24 +26,22 @@ block content
 
 	.container
 		.row: .col-sm-12.col-md-12.home-page-header
-			//- img(src='images/logo-main.svg', alt='the image is broke', height='100', width='100')
 			.home-logo
 				object(type='image/svg+xml', data='images/logo-main.svg')
 			div.arrow.bounce
+
+	.container-fluid
 		.row.home-products
-			h2 Personal Sized
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/rtd_black_white.jpeg')
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/rtd_cacao_blue.jpeg')
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/rtd_chaga_yellow.jpg')
-		.row.home-products
-			h2 Concentrates
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/conc_coffee_and_chic.jpg')
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/conc_dark_roast.jpg')
-			.col-md-4.col-sm-4.col-xs-12
-				img(src='images/conc_dark_roast.jpg')
+			.col-md-6.col-sm-6.col-xs-12
+				img(src='images/product-group.jpg')
+			.col-md-6.col-sm-6.col-xs-12
+				h3 PRODUCTS
+		//- .row.home-products
+		//- 	h2 Concentrates
+		//- 	.col-md-4.col-sm-4.col-xs-12
+		//- 		img(src='images/conc_coffee_and_chic.jpg')
+		//- 	.col-md-4.col-sm-4.col-xs-12
+		//- 		img(src='images/conc_dark_roast.jpg')
+		//- 	.col-md-4.col-sm-4.col-xs-12
+		//- 		img(src='images/conc_dark_roast.jpg')
 
