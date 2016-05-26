@@ -1,25 +1,30 @@
 extends ../layouts/default
 
 block content
-  #header: .container-fluid
+  #header: .container-fluid.header-wrapper
     div.nav-logo
       //- object(type='image/svg+xml', data='images/logo-main.svg')
       img(src='images/milton-small-logo-name-only.png')
-    ul(role='navigation').mobilenav
-      each link in navLinks
-        li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-      .nav-logo
-        img(src='images/milton-small-logo-name-only-white.png')
-      ul.social-links
-        //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
-        li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
-        li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
-        li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
-    a(href='javascript:void(0)', class='icon')
-      div.hamburger
-        div.menui.top-menu
-        div.menui.mid-menu
-        div.menui.bottom-menu
+      ul(role='navigation').mobilenav
+        each link in navLinks
+          li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+        .nav-logo
+          img(src='images/milton-small-logo-name-only-white.png')
+        ul.social-links
+          //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+          li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+          li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+          li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+      ul.social-links.home-social-links
+          //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+          li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+          li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+          li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+      a(href='javascript:void(0)', class='icon')
+        div.hamburger
+          div.menui.top-menu
+          div.menui.mid-menu
+          div.menui.bottom-menu
 
   //- #find-map: .container-fluid
   //-   div#map(style="width: 100%; height: 100%;")
@@ -30,9 +35,9 @@ block content
         p Milton & Small can be found at specialty shops, natural grocery stores, and neighborhood markets throughout the San Francisco Bay Area and beyond!
         p While we keep this list up to date as possible, we suggest checking with your local store to be sure they carry the specific products you want.
     .row.locations
-      .col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.city
+      .col-xs-12.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.loc-details
+        h2 San Francisco Bay Area
         h3 East Bay
-      .col-xs-12.col-sm-7.col-md-7.loc-details
         ul
           li: a(href='https://www.alamedanaturalgrocery.com/ ') Alameda Natural Foods
           li: a(href='http://www.berkeleybowl.com/') Berkeley Bowl
@@ -45,11 +50,9 @@ block content
           li: a(href='http://www.wholefoodsmarket.com/') Whole Foods Dublin
           li: a(href='http://www.wholefoodsmarket.com/') Whole Foods Oakland
           li: a(href='http://www.wholefoodsmarket.com/') Whole Foods Walnut Creek
-
     .row.locations
-      .col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.city
+      .col-xs-12.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.loc-details
         h3 North Bay
-      .col-xs-12.col-sm-7.col-md-7.loc-details
         ul
           li: a(href='http://andysproduce.com/') Andy’s Produce Market
           li: a(href='http://driversmarket.com/') Drivers Market
@@ -59,9 +62,8 @@ block content
           li: a(href='http://www.wholefoodsmarket.com/') Whole Foods Napa
 
     .row.locations
-      .col-xs-12.col-sm-3.col-sm-offset-1.col-md-3.col-md-offset-1.city
+      .col-xs-12.col-sm-8.col-sm-offset-2.col-md-8.col-md-offset-2.loc-details
         h3 San Francisco
-      .col-xs-12.col-sm-7.col-md-7.loc-details
         ul
           li: a(href='http://smallfoodssf.com/') Small Foods SF (SoMa)
           li: a(href='http://www.rainbow.coop/') Rainbow Grocery (Mission)
