@@ -54,13 +54,24 @@ html
 			block content
 
 	#footer.container-fluid
-		//- ul
-		//- 	if user
-		//- 		if user.canAccessKeystone
-		//- 			li: a(href='/keystone') Open Keystone
-		//- 		li: a(href='/keystone/signout') Sign Out
-		//- 	else
-		//- 		li: a(href='/keystone/signin') Sign In
+		.row.footer-nav
+			.col-md-4.col-sm-4.col-xs-12
+				ul
+					li: a(href="mailto:z@miltonandsmall.com") z@miltonandsmall.com
+					li ALL RIGHTS RESERVED
+					li EIGHT 5 OH, LLC 2016
+			.col-md-4.col-sm-4.col-xs-12.footer-nav-links
+				ul(role='navigation')
+					each link in navLinks
+						li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+			.col-md-4.col-sm-4.col-xs-12.footer-social-links
+				ul
+					//- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+					li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+					li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+					li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+
+
 
 
 		//- JAVASCRIPT
