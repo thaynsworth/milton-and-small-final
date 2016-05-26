@@ -5941,7 +5941,7 @@ body {
   height: 50px;
   width: 50px;
   margin: 0px;
-  top: 60px;
+  top: 25px;
   right: 60px; }
 
 .mobilenav {
@@ -5989,6 +5989,13 @@ body {
     width: 1.5em; }
   .social-links li {
     display: inline-block; }
+
+.home-social-links {
+  position: fixed;
+  top: 21px;
+  right: 141px; }
+  .home-social-links li {
+    margin-right: 13px; }
 
 #footer {
   background-color: #4d4d4d;
