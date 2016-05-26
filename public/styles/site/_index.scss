@@ -24,11 +24,19 @@
   text-align: center;
   font-family: "Metroblack2Com";
   font-size: 20px;
-  background-color: white;
 }
 
 .home-products {
+  text-align: center;
 
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 // Bouncing Arrow

@@ -6044,8 +6044,15 @@ body {
   padding: 30px 5%;
   text-align: center;
   font-family: "Metroblack2Com";
-  font-size: 20px;
-  background-color: white; }
+  font-size: 20px; }
+
+.home-products {
+  text-align: center; }
+  .home-products h3 {
+    font-size: 25px;
+    font-weight: bold; }
+  .home-products p {
+    font-size: 16px; }
 
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
