@@ -6044,7 +6044,10 @@ body {
   font-size: 20px; }
 
 .home-products {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
+  .home-products img {
+    width: 100%; }
   .home-products h3 {
     font-size: 25px;
     font-weight: bold; }

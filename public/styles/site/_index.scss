@@ -28,6 +28,11 @@
 
 .home-products {
   text-align: center;
+  margin-top: 30px;
+
+  img {
+    width: 100%;
+  }
 
   h3 {
     font-size: 25px;
@@ -37,6 +42,10 @@
   p {
     font-size: 16px;
   }
+}
+
+.about-section {
+
 }
 
 // Bouncing Arrow
