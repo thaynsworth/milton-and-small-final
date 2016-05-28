@@ -6139,6 +6139,9 @@ body {
 
 #find-list {
   font-family: 'MetroMediumHPLHS'; }
+  #find-list .locations-header {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px; }
   #find-list ul {
     list-style-type: none;
     padding: 0; }
