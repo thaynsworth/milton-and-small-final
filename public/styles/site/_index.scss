@@ -4,7 +4,7 @@
 .home-page-header {
   text-align: center;
   padding: 4% 0;
-  min-height: 780px;
+  // min-height: 780px;
 
   .home-logo {
 
@@ -27,6 +27,7 @@
 }
 
 .home-products {
+  font-family: "Metrolite2Com";
   text-align: center;
   margin-top: 30px;
 
@@ -37,6 +38,7 @@
   h3 {
     font-size: 25px;
     font-weight: bold;
+    font-family: "Metroblack2Com";
   }
 
   p {
@@ -45,7 +47,17 @@
 }
 
 .about-section {
+  font-family: "Metrolite2Com";
 
+  h2 {
+    font-family: "Metroblack2Com";
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 // Bouncing Arrow
