@@ -142,7 +142,7 @@
   width: 100%;
 }
 
-.mobilenav > li:first-child {
+.mobilenav > li:nth-child(2) {
   margin-top: 250px;
 }
 
@@ -169,6 +169,40 @@
   li {
     margin-right: 13px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-logo {
+      left: 30px;
+    }
+
+    .icon {
+      right: 30px;
+    }
+
+    .home-social-links {
+      display: none;
+    }
+
+    .mobilenav {
+
+      & li:nth-child(2) {
+        margin-top: 0;
+      }
+
+      .nav-logo {
+        position: static;
+        margin: 0 auto;
+        margin: 90px auto 23px auto;
+      }
+    }
+
+    .social-links {
+
+      img {
+        width: 1em;
+      }
+    }
 }
 
 

@@ -7,12 +7,12 @@ block content
 		//- ... or completely change this header to suit your design.
 		div.nav-logo.nav-logo-animate
 			//- object(type='image/svg+xml', data='images/logo-main.svg')
-			img(src='images/milton-small-logo-name-only.png')
+			a(href='/'): img(src='images/milton-small-logo-name-only.png')
 			ul(role='navigation').mobilenav
+				li.nav-logo
+					a(href='/'): img(src='images/milton-small-logo-name-only-white.png')
 				each link in navLinks
 					li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-				.nav-logo
-					img(src='images/milton-small-logo-name-only-white.png')
 				ul.social-links
 					//- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
 					li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
@@ -85,7 +85,7 @@ block content
 				p We’ve now grown our creations beyond just coffees and are endlessly seeking out innovative and unique ingredients. This is a new chapter on our journey and I’m excited to have you along for the ride.
 				p Welcome to the tribe... You lucky devil!
 				p Yours truly,
-				p -b, Owner
+				p(style='font-size: 24px;') -b, Owner
 				h2 Are you Milton or Small?
 				p MILTON & SMALL is a nod to the literary great John Steinbeck and his novella Of Mice and Men. Why? Because it’s a timeless name that makes you want to be interested in what we’re doing. And there’s always more to it than meets the eye...
 

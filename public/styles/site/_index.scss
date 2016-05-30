@@ -60,6 +60,31 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+  body {
+    background-size: 100% 800%;
+  }
+
+  .home-page-header {
+
+    .home-logo {
+
+      object {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .home-products {
+
+    img {
+      width: 70%;
+    }
+  }
+}
+
 // Bouncing Arrow
 
 @-moz-keyframes bounce {

@@ -4,12 +4,12 @@ block content
 	#header: .container-fluid.header-wrapper
 		div.nav-logo
 			//- object(type='image/svg+xml', data='images/logo-main.svg')
-			img(src='images/milton-small-logo-name-only.png')
+			a(href='/'): img(src='images/milton-small-logo-name-only.png')
 			ul(role='navigation').mobilenav
+				li.nav-logo
+					a(href='/'): img(src='images/milton-small-logo-name-only-white.png')
 				each link in navLinks
 					li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-				.nav-logo
-					img(src='images/milton-small-logo-name-only-white.png')
 				ul.social-links
 					//- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
 					li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')

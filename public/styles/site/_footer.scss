@@ -43,6 +43,7 @@
 
     .footer-social-links {
       margin-top: 14px;
+      padding-left: 0;
 
       li {
         display: inline-block;
@@ -55,3 +56,29 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 500px) {
+  #footer {
+    padding: 30px;
+
+    .footer-nav {
+
+      .footer-social-links {
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
