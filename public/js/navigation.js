@@ -35,7 +35,7 @@
 function togglescroll() {
   $('body').on('touchstart', function(e) {
     if ($('body').hasClass('noscroll')) {
-      // e.preventDefault();
+      e.preventDefault();
     }
   });
 }
