@@ -6,7 +6,7 @@
             // $('.icon-animate').fadeIn(500);
             $('.nav-logo-animate').fadeIn(300);
             // $('.header-wrapper').fadeIn(500);
-            setTimeout(function() {$(".header-wrapper").css("background-color", "white")}, 300);
+            // setTimeout(function() {$(".header-wrapper").css("background-color", "white")}, 300);
         } else {
             // $('.icon-animate').fadeOut(500);
             $('.nav-logo-animate').fadeOut(300);
