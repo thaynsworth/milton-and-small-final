@@ -33,7 +33,7 @@
 })(jQuery);
 
 function togglescroll() {
-  $('body').on('touchstart', function(e) {
+  $('body').bind('touchmove', function(e) {
     if ($('body').hasClass('noscroll')) {
       e.preventDefault();
     }
