@@ -16,7 +16,7 @@ keystone.init({
 
 	'sass': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/favicon.png',
 	'views': 'templates/views',
 	'view engine': 'jade',
 
@@ -73,13 +73,13 @@ keystone.set('email locals', {
 // Be sure to update this rule to include your site's actual domain, and add
 // other rules your email templates require.
 
-keystone.set('email rules', [{
-	find: '/images/',
-	replace: (keystone.get('env') == 'production') ? 'http://104.236.160.119/images/' : 'http://localhost:3000/images/'
-}, {
-	find: '/keystone/',
-	replace: (keystone.get('env') == 'production') ? 'http://104.236.160.119/keystone/' : 'http://localhost:3000/keystone/'
-}]);
+// keystone.set('email rules', [{
+// 	find: '/images/',
+// 	replace: (keystone.get('env') == 'production') ? 'http://104.236.160.119/images/' : 'http://localhost:3000/images/'
+// }, {
+// 	find: '/keystone/',
+// 	replace: (keystone.get('env') == 'production') ? 'http://104.236.160.119/keystone/' : 'http://localhost:3000/keystone/'
+// }]);
 
 // Load your project's email test routes
 
