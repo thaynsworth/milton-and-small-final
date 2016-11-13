@@ -36,6 +36,7 @@ exports = module.exports = function(app) {
 
 	// Views
 	app.get('/', routes.views.index);
+	app.use(express.static('public'));
 	// app.all('/about', routes.views.about);
 	// app.all('/products', routes.views.products);
 	app.all('/find', routes.views.find);
