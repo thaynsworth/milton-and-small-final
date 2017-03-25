@@ -18,6 +18,7 @@
  * http://expressjs.com/api.html#app.VERB
  */
 
+var express = require('express');
 var keystone = require('keystone');
 var middleware = require('./middleware');
 var importRoutes = keystone.importer(__dirname);
