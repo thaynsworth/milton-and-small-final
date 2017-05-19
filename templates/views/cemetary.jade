@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+block content
+    #header: .container-fluid.header-wrapper
+        div.nav-logo
+            //- object(type='image/svg+xml', data='images/logo-main.svg')
+            a(href='/'): img(src='images/milton-small-logo-name-only.png')
+            ul(role='navigation').mobilenav
+                li.nav-logo
+                    a(href='/'): img(src='images/milton-small-logo-name-only-white.png')
+                each link in navLinks
+                    li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+                ul.social-links
+                    //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+                    li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+                    li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+                    li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+            ul.social-links.home-social-links
+                //- Below icons Maicol Torti https://www.iconfinder.com/iconsets/squarico-free
+                li: a(href='https://www.facebook.com/miltonandsmall'): img(src='images/1462181599_squarico-19.png')
+                li: a(href='https://twitter.com/miltonandsmall'): img(src='images/1462255654_squarico-18.png')
+                li: a(href='https://www.instagram.com/miltonandsmall/'): img(src='images/1462181596_squarico-20.png')
+            a(href='javascript:void(0)', class='icon')
+                div.hamburger
+                    div.menui.top-menu
+                    div.menui.mid-menu
+                    div.menui.bottom-menu
