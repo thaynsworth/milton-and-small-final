@@ -6212,3 +6212,13 @@ body {
     text-decoration: none; }
   #find-list .loc-details {
     text-align: center; }
+
+#cemetary .cemetary-header {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'MetroMediumHPLHS';
+  margin: 0px auto 40px;
+  border-bottom: 2px solid black; }
+  #cemetary .cemetary-header h1 {
+    margin-bottom: 50px; }
