@@ -40,7 +40,7 @@ exports = module.exports = function(app) {
 	app.use(express.static('public'));
 	// app.all('/about', routes.views.about);
 	// app.all('/products', routes.views.products);
-	app.all('/find', routes.views.find);
+	//app.all('/find', routes.views.find);
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);
 	// app.get('/gallery', routes.views.gallery);
